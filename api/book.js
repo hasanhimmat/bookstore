@@ -1,0 +1,111 @@
+export default function handler(req, res) {
+  const books = [
+    {
+      id: 1,
+      name: "Atomic Habits",
+      description: "Small habits, big results.",
+      price: "$14.99",
+      image: "https://covers.openlibrary.org/b/id/10523334-L.jpg",
+    },
+    {
+      id: 2,
+      name: "Deep Work",
+      description: "Focus without distraction.",
+      price: "$12.99",
+      image: "https://covers.openlibrary.org/b/id/8228691-L.jpg",
+    },
+    {
+      id: 3,
+      name: "The 7 Habits of Highly Effective People",
+      description: "Life-changing principles.",
+      price: "$15.99",
+      image: "https://covers.openlibrary.org/b/id/8231856-L.jpg",
+    },
+    {
+      id: 4,
+      name: "Rich Dad Poor Dad",
+      description: "Money mindset shift.",
+      price: "$10.99",
+      image: "https://covers.openlibrary.org/b/id/9874916-L.jpg",
+    },
+    {
+      id: 5,
+      name: "The Psychology of Money",
+      description: "How money works in life.",
+      price: "$13.99",
+      image: "https://covers.openlibrary.org/b/id/11447703-L.jpg",
+    },
+    {
+      id: 6,
+      name: "Think and Grow Rich",
+      description: "Classic success mindset.",
+      price: "$9.99",
+      image: "https://covers.openlibrary.org/b/id/7222246-L.jpg",
+    },
+    {
+      id: 7,
+      name: "The Subtle Art of Not Giving a F*ck",
+      description: "Life philosophy guide.",
+      price: "$11.99",
+      image: "https://covers.openlibrary.org/b/id/11153265-L.jpg",
+    },
+    {
+      id: 8,
+      name: "Start With Why",
+      description: "Leadership inspiration.",
+      price: "$14.49",
+      image: "https://covers.openlibrary.org/b/id/11124576-L.jpg",
+    },
+    {
+      id: 9,
+      name: "Can't Hurt Me",
+      description: "Mental toughness guide.",
+      price: "$16.99",
+      image: "https://covers.openlibrary.org/b/id/11123327-L.jpg",
+    },
+    {
+      id: 10,
+      name: "Ikigai",
+      description: "Japanese life purpose.",
+      price: "$12.49",
+      image: "https://covers.openlibrary.org/b/id/8370226-L.jpg",
+    },
+    {
+      id: 11,
+      name: "Zero to One",
+      description: "Startup thinking.",
+      price: "$13.50",
+      image: "https://covers.openlibrary.org/b/id/8091016-L.jpg",
+    },
+    {
+      id: 12,
+      name: "The Alchemist",
+      description: "Follow your dream journey.",
+      price: "$11.00",
+      image: "https://covers.openlibrary.org/b/id/8235116-L.jpg",
+    },
+    {
+      id: 13,
+      name: "The Power of Habit",
+      description: "Why habits control life.",
+      price: "$14.20",
+      image: "https://covers.openlibrary.org/b/id/8231990-L.jpg",
+    },
+    {
+      id: 14,
+      name: "Rich Dad's Cashflow Quadrant",
+      description: "Financial freedom path.",
+      price: "$12.75",
+      image: "https://covers.openlibrary.org/b/id/8369251-L.jpg",
+    },
+    {
+      id: 15,
+      name: "Thinking, Fast and Slow",
+      description: "How the mind works.",
+      price: "$15.20",
+      image: "https://covers.openlibrary.org/b/id/8231992-L.jpg",
+    },
+  ];
+
+  res.status(200).json(books);
+}

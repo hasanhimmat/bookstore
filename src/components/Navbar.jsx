@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import NavItem from "./ui/NavItem";
 
 export default function Navbar() {
   return (
@@ -7,48 +7,23 @@ export default function Navbar() {
         <div className="flex items-center justify-center h-16">
           <ul className="flex items-center gap-6 text-sm md:text-base font-medium text-gray-700">
             <li>
-              <Link
-                to="/"
-                className="relative hover:text-blue-600 transition after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all hover:after:w-full"
-              >
-                Home
-              </Link>
+              <NavItem to="/">Home</NavItem>
             </li>
 
             <li>
-              <Link
-                to="/shop"
-                className="relative hover:text-blue-600 transition after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all hover:after:w-full"
-              >
-                Shop
-              </Link>
+              <NavItem to="/shop">Shop</NavItem>
             </li>
 
             <li>
-              <Link
-                to="/blog"
-                className="relative hover:text-blue-600 transition after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all hover:after:w-full"
-              >
-                Blog
-              </Link>
+              <NavItem to="/blog">Blog</NavItem>
             </li>
 
             <li>
-              <Link
-                to="/about"
-                className="relative hover:text-blue-600 transition after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all hover:after:w-full"
-              >
-                About
-              </Link>
+              <NavItem to="/about">About</NavItem>
             </li>
 
             <li>
-              <Link
-                to="/contact"
-                className="relative hover:text-blue-600 transition after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all hover:after:w-full"
-              >
-                Contact
-              </Link>
+              <NavItem to="/contact">Contact</NavItem>
             </li>
           </ul>
         </div>
